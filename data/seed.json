@@ -1,0 +1,2640 @@
+{
+  "categories": [
+    {
+      "id": "cat_electric_guitars",
+      "name": "Электрогитары",
+      "parent_id": null
+    },
+    {
+      "id": "cat_acoustic_guitars",
+      "name": "Акустические гитары",
+      "parent_id": null
+    },
+    {
+      "id": "cat_bass",
+      "name": "Бас-гитары",
+      "parent_id": null
+    },
+    {
+      "id": "cat_amps",
+      "name": "Комбоусилители",
+      "parent_id": null
+    },
+    {
+      "id": "cat_drums",
+      "name": "Ударные установки",
+      "parent_id": null
+    },
+    {
+      "id": "cat_keys",
+      "name": "Клавишные и синтезаторы",
+      "parent_id": null
+    },
+    {
+      "id": "cat_mics",
+      "name": "Микрофоны",
+      "parent_id": null
+    },
+    {
+      "id": "cat_cables",
+      "name": "Кабели",
+      "parent_id": null
+    },
+    {
+      "id": "cat_pedals",
+      "name": "Педали эффектов",
+      "parent_id": null
+    },
+    {
+      "id": "cat_strings",
+      "name": "Струны",
+      "parent_id": null
+    },
+    {
+      "id": "cat_cases",
+      "name": "Чехлы и кейсы",
+      "parent_id": null
+    },
+    {
+      "id": "cat_stands",
+      "name": "Стойки и держатели",
+      "parent_id": null
+    },
+    {
+      "id": "cat_dj",
+      "name": "DJ-оборудование",
+      "parent_id": null
+    },
+    {
+      "id": "cat_monitors",
+      "name": "Студийные мониторы",
+      "parent_id": null
+    }
+  ],
+  "products": [
+    {
+      "id": "prod_1",
+      "title": "Gibson Stratocaster",
+      "price": 408400,
+      "category_id": "cat_electric_guitars",
+      "tags": [
+        "electric_guitars",
+        "gibson",
+        "stratocaster"
+      ]
+    },
+    {
+      "id": "prod_2",
+      "title": "Yamaha Telecaster",
+      "price": 266300,
+      "category_id": "cat_electric_guitars",
+      "tags": [
+        "electric_guitars",
+        "telecaster",
+        "yamaha"
+      ]
+    },
+    {
+      "id": "prod_3",
+      "title": "Gibson Explorer",
+      "price": 691900,
+      "category_id": "cat_electric_guitars",
+      "tags": [
+        "electric_guitars",
+        "explorer",
+        "gibson"
+      ]
+    },
+    {
+      "id": "prod_4",
+      "title": "Gibson RG550",
+      "price": 562400,
+      "category_id": "cat_electric_guitars",
+      "tags": [
+        "electric_guitars",
+        "gibson",
+        "rg550"
+      ]
+    },
+    {
+      "id": "prod_5",
+      "title": "Fender Stratocaster",
+      "price": 218200,
+      "category_id": "cat_electric_guitars",
+      "tags": [
+        "electric_guitars",
+        "fender",
+        "stratocaster"
+      ]
+    },
+    {
+      "id": "prod_6",
+      "title": "Yamaha Telecaster",
+      "price": 649900,
+      "category_id": "cat_electric_guitars",
+      "tags": [
+        "electric_guitars",
+        "telecaster",
+        "yamaha"
+      ]
+    },
+    {
+      "id": "prod_7",
+      "title": "Fender RG550",
+      "price": 328500,
+      "category_id": "cat_electric_guitars",
+      "tags": [
+        "electric_guitars",
+        "fender",
+        "rg550"
+      ]
+    },
+    {
+      "id": "prod_8",
+      "title": "PRS Telecaster",
+      "price": 591000,
+      "category_id": "cat_electric_guitars",
+      "tags": [
+        "electric_guitars",
+        "prs",
+        "telecaster"
+      ]
+    },
+    {
+      "id": "prod_9",
+      "title": "ESP Stratocaster",
+      "price": 287400,
+      "category_id": "cat_electric_guitars",
+      "tags": [
+        "electric_guitars",
+        "esp",
+        "stratocaster"
+      ]
+    },
+    {
+      "id": "prod_10",
+      "title": "Fender FG800",
+      "price": 225700,
+      "category_id": "cat_acoustic_guitars",
+      "tags": [
+        "acoustic_guitars",
+        "fender",
+        "fg800"
+      ]
+    },
+    {
+      "id": "prod_11",
+      "title": "Taylor GS Mini",
+      "price": 480300,
+      "category_id": "cat_acoustic_guitars",
+      "tags": [
+        "acoustic_guitars",
+        "gs",
+        "taylor"
+      ]
+    },
+    {
+      "id": "prod_12",
+      "title": "Martin Dreadnought",
+      "price": 128600,
+      "category_id": "cat_acoustic_guitars",
+      "tags": [
+        "acoustic_guitars",
+        "dreadnought",
+        "martin"
+      ]
+    },
+    {
+      "id": "prod_13",
+      "title": "Fender Dreadnought",
+      "price": 268200,
+      "category_id": "cat_acoustic_guitars",
+      "tags": [
+        "acoustic_guitars",
+        "dreadnought",
+        "fender"
+      ]
+    },
+    {
+      "id": "prod_14",
+      "title": "Martin Concert",
+      "price": 218700,
+      "category_id": "cat_acoustic_guitars",
+      "tags": [
+        "acoustic_guitars",
+        "concert",
+        "martin"
+      ]
+    },
+    {
+      "id": "prod_15",
+      "title": "Yamaha Grand Auditorium",
+      "price": 361100,
+      "category_id": "cat_acoustic_guitars",
+      "tags": [
+        "acoustic_guitars",
+        "grand",
+        "yamaha"
+      ]
+    },
+    {
+      "id": "prod_16",
+      "title": "Yamaha Grand Auditorium",
+      "price": 121300,
+      "category_id": "cat_acoustic_guitars",
+      "tags": [
+        "acoustic_guitars",
+        "grand",
+        "yamaha"
+      ]
+    },
+    {
+      "id": "prod_17",
+      "title": "Cort FG800",
+      "price": 409600,
+      "category_id": "cat_acoustic_guitars",
+      "tags": [
+        "acoustic_guitars",
+        "cort",
+        "fg800"
+      ]
+    },
+    {
+      "id": "prod_18",
+      "title": "Cort FG800",
+      "price": 382700,
+      "category_id": "cat_acoustic_guitars",
+      "tags": [
+        "acoustic_guitars",
+        "cort",
+        "fg800"
+      ]
+    },
+    {
+      "id": "prod_19",
+      "title": "Sterling Precision Bass",
+      "price": 124000,
+      "category_id": "cat_bass",
+      "tags": [
+        "bass",
+        "precision",
+        "sterling"
+      ]
+    },
+    {
+      "id": "prod_20",
+      "title": "Sterling Jazz Bass",
+      "price": 505300,
+      "category_id": "cat_bass",
+      "tags": [
+        "bass",
+        "jazz",
+        "sterling"
+      ]
+    },
+    {
+      "id": "prod_21",
+      "title": "Music Man Precision Bass",
+      "price": 548400,
+      "category_id": "cat_bass",
+      "tags": [
+        "bass",
+        "music-man",
+        "precision"
+      ]
+    },
+    {
+      "id": "prod_22",
+      "title": "Ibanez Precision Bass",
+      "price": 299300,
+      "category_id": "cat_bass",
+      "tags": [
+        "bass",
+        "ibanez",
+        "precision"
+      ]
+    },
+    {
+      "id": "prod_23",
+      "title": "Music Man StingRay",
+      "price": 433300,
+      "category_id": "cat_bass",
+      "tags": [
+        "bass",
+        "music-man",
+        "stingray"
+      ]
+    },
+    {
+      "id": "prod_24",
+      "title": "Music Man Jazz Bass",
+      "price": 294100,
+      "category_id": "cat_bass",
+      "tags": [
+        "bass",
+        "jazz",
+        "music-man"
+      ]
+    },
+    {
+      "id": "prod_25",
+      "title": "Music Man Jazz Bass",
+      "price": 451400,
+      "category_id": "cat_bass",
+      "tags": [
+        "bass",
+        "jazz",
+        "music-man"
+      ]
+    },
+    {
+      "id": "prod_26",
+      "title": "Blackstar Katana-50",
+      "price": 149700,
+      "category_id": "cat_amps",
+      "tags": [
+        "amps",
+        "blackstar",
+        "katana-50"
+      ]
+    },
+    {
+      "id": "prod_27",
+      "title": "Vox DSL40CR",
+      "price": 145700,
+      "category_id": "cat_amps",
+      "tags": [
+        "amps",
+        "dsl40cr",
+        "vox"
+      ]
+    },
+    {
+      "id": "prod_28",
+      "title": "Orange Crush 20",
+      "price": 201500,
+      "category_id": "cat_amps",
+      "tags": [
+        "amps",
+        "crush",
+        "orange"
+      ]
+    },
+    {
+      "id": "prod_29",
+      "title": "Blackstar AC15",
+      "price": 175100,
+      "category_id": "cat_amps",
+      "tags": [
+        "ac15",
+        "amps",
+        "blackstar"
+      ]
+    },
+    {
+      "id": "prod_30",
+      "title": "Blackstar Blues Junior",
+      "price": 89300,
+      "category_id": "cat_amps",
+      "tags": [
+        "amps",
+        "blackstar",
+        "blues"
+      ]
+    },
+    {
+      "id": "prod_31",
+      "title": "Marshall Katana-50",
+      "price": 225400,
+      "category_id": "cat_amps",
+      "tags": [
+        "amps",
+        "katana-50",
+        "marshall"
+      ]
+    },
+    {
+      "id": "prod_32",
+      "title": "Orange Blues Junior",
+      "price": 94700,
+      "category_id": "cat_amps",
+      "tags": [
+        "amps",
+        "blues",
+        "orange"
+      ]
+    },
+    {
+      "id": "prod_33",
+      "title": "Marshall AC15",
+      "price": 225000,
+      "category_id": "cat_amps",
+      "tags": [
+        "ac15",
+        "amps",
+        "marshall"
+      ]
+    },
+    {
+      "id": "prod_34",
+      "title": "Sonor Performer",
+      "price": 664800,
+      "category_id": "cat_drums",
+      "tags": [
+        "drums",
+        "performer",
+        "sonor"
+      ]
+    },
+    {
+      "id": "prod_35",
+      "title": "Sonor Performer",
+      "price": 399800,
+      "category_id": "cat_drums",
+      "tags": [
+        "drums",
+        "performer",
+        "sonor"
+      ]
+    },
+    {
+      "id": "prod_36",
+      "title": "Yamaha Superstar",
+      "price": 508600,
+      "category_id": "cat_drums",
+      "tags": [
+        "drums",
+        "superstar",
+        "yamaha"
+      ]
+    },
+    {
+      "id": "prod_37",
+      "title": "Sonor Force",
+      "price": 815200,
+      "category_id": "cat_drums",
+      "tags": [
+        "drums",
+        "force",
+        "sonor"
+      ]
+    },
+    {
+      "id": "prod_38",
+      "title": "Yamaha Force",
+      "price": 699200,
+      "category_id": "cat_drums",
+      "tags": [
+        "drums",
+        "force",
+        "yamaha"
+      ]
+    },
+    {
+      "id": "prod_39",
+      "title": "Mapex Performer",
+      "price": 629600,
+      "category_id": "cat_drums",
+      "tags": [
+        "drums",
+        "mapex",
+        "performer"
+      ]
+    },
+    {
+      "id": "prod_40",
+      "title": "Tama Superstar",
+      "price": 784300,
+      "category_id": "cat_drums",
+      "tags": [
+        "drums",
+        "superstar",
+        "tama"
+      ]
+    },
+    {
+      "id": "prod_41",
+      "title": "Yamaha PSR-E373",
+      "price": 185000,
+      "category_id": "cat_keys",
+      "tags": [
+        "keys",
+        "psr-e373",
+        "yamaha"
+      ]
+    },
+    {
+      "id": "prod_42",
+      "title": "Korg Minilogue",
+      "price": 783500,
+      "category_id": "cat_keys",
+      "tags": [
+        "keys",
+        "korg",
+        "minilogue"
+      ]
+    },
+    {
+      "id": "prod_43",
+      "title": "Nord CT-S300",
+      "price": 136600,
+      "category_id": "cat_keys",
+      "tags": [
+        "ct-s300",
+        "keys",
+        "nord"
+      ]
+    },
+    {
+      "id": "prod_44",
+      "title": "Nord Electro",
+      "price": 694800,
+      "category_id": "cat_keys",
+      "tags": [
+        "electro",
+        "keys",
+        "nord"
+      ]
+    },
+    {
+      "id": "prod_45",
+      "title": "Nord CT-S300",
+      "price": 333600,
+      "category_id": "cat_keys",
+      "tags": [
+        "ct-s300",
+        "keys",
+        "nord"
+      ]
+    },
+    {
+      "id": "prod_46",
+      "title": "Casio PSR-E373",
+      "price": 783300,
+      "category_id": "cat_keys",
+      "tags": [
+        "casio",
+        "keys",
+        "psr-e373"
+      ]
+    },
+    {
+      "id": "prod_47",
+      "title": "Novation PSR-E373",
+      "price": 784800,
+      "category_id": "cat_keys",
+      "tags": [
+        "keys",
+        "novation",
+        "psr-e373"
+      ]
+    },
+    {
+      "id": "prod_48",
+      "title": "Casio Juno-DS",
+      "price": 875900,
+      "category_id": "cat_keys",
+      "tags": [
+        "casio",
+        "juno-ds",
+        "keys"
+      ]
+    },
+    {
+      "id": "prod_49",
+      "title": "AKG SM58",
+      "price": 91900,
+      "category_id": "cat_mics",
+      "tags": [
+        "akg",
+        "mics",
+        "sm58"
+      ]
+    },
+    {
+      "id": "prod_50",
+      "title": "Audio-Technica NT1",
+      "price": 133900,
+      "category_id": "cat_mics",
+      "tags": [
+        "audio-technica",
+        "mics",
+        "nt1"
+      ]
+    },
+    {
+      "id": "prod_51",
+      "title": "Shure C214",
+      "price": 146200,
+      "category_id": "cat_mics",
+      "tags": [
+        "c214",
+        "mics",
+        "shure"
+      ]
+    },
+    {
+      "id": "prod_52",
+      "title": "Rode e935",
+      "price": 42900,
+      "category_id": "cat_mics",
+      "tags": [
+        "e935",
+        "mics",
+        "rode"
+      ]
+    },
+    {
+      "id": "prod_53",
+      "title": "AKG e935",
+      "price": 174600,
+      "category_id": "cat_mics",
+      "tags": [
+        "akg",
+        "e935",
+        "mics"
+      ]
+    },
+    {
+      "id": "prod_54",
+      "title": "Rode NT1",
+      "price": 113000,
+      "category_id": "cat_mics",
+      "tags": [
+        "mics",
+        "nt1",
+        "rode"
+      ]
+    },
+    {
+      "id": "prod_55",
+      "title": "Rode e935",
+      "price": 219100,
+      "category_id": "cat_mics",
+      "tags": [
+        "e935",
+        "mics",
+        "rode"
+      ]
+    },
+    {
+      "id": "prod_56",
+      "title": "Sennheiser SM58",
+      "price": 172000,
+      "category_id": "cat_mics",
+      "tags": [
+        "mics",
+        "sennheiser",
+        "sm58"
+      ]
+    },
+    {
+      "id": "prod_57",
+      "title": "AKG AT2020",
+      "price": 20100,
+      "category_id": "cat_mics",
+      "tags": [
+        "akg",
+        "at2020",
+        "mics"
+      ]
+    },
+    {
+      "id": "prod_58",
+      "title": "Planet Waves Patch Cable",
+      "price": 6900,
+      "category_id": "cat_cables",
+      "tags": [
+        "cables",
+        "patch",
+        "planet-waves"
+      ]
+    },
+    {
+      "id": "prod_59",
+      "title": "Ernie Ball Instrument Cable 6m",
+      "price": 12300,
+      "category_id": "cat_cables",
+      "tags": [
+        "cables",
+        "ernie-ball",
+        "instrument"
+      ]
+    },
+    {
+      "id": "prod_60",
+      "title": "Ernie Ball Instrument Cable 6m",
+      "price": 15000,
+      "category_id": "cat_cables",
+      "tags": [
+        "cables",
+        "ernie-ball",
+        "instrument"
+      ]
+    },
+    {
+      "id": "prod_61",
+      "title": "Cordial Instrument Cable 6m",
+      "price": 11700,
+      "category_id": "cat_cables",
+      "tags": [
+        "cables",
+        "cordial",
+        "instrument"
+      ]
+    },
+    {
+      "id": "prod_62",
+      "title": "Fender Instrument Cable 6m",
+      "price": 13800,
+      "category_id": "cat_cables",
+      "tags": [
+        "cables",
+        "fender",
+        "instrument"
+      ]
+    },
+    {
+      "id": "prod_63",
+      "title": "Cordial XLR Cable 3m",
+      "price": 5700,
+      "category_id": "cat_cables",
+      "tags": [
+        "cables",
+        "cordial",
+        "xlr"
+      ]
+    },
+    {
+      "id": "prod_64",
+      "title": "Planet Waves XLR Cable 3m",
+      "price": 12900,
+      "category_id": "cat_cables",
+      "tags": [
+        "cables",
+        "planet-waves",
+        "xlr"
+      ]
+    },
+    {
+      "id": "prod_65",
+      "title": "MXR Big Muff",
+      "price": 46400,
+      "category_id": "cat_pedals",
+      "tags": [
+        "big",
+        "mxr",
+        "pedals"
+      ]
+    },
+    {
+      "id": "prod_66",
+      "title": "Ibanez Ditto Looper",
+      "price": 68900,
+      "category_id": "cat_pedals",
+      "tags": [
+        "ditto",
+        "ibanez",
+        "pedals"
+      ]
+    },
+    {
+      "id": "prod_67",
+      "title": "TC Electronic Big Muff",
+      "price": 79200,
+      "category_id": "cat_pedals",
+      "tags": [
+        "big",
+        "pedals",
+        "tc-electronic"
+      ]
+    },
+    {
+      "id": "prod_68",
+      "title": "Boss Phase 90",
+      "price": 49500,
+      "category_id": "cat_pedals",
+      "tags": [
+        "boss",
+        "pedals",
+        "phase"
+      ]
+    },
+    {
+      "id": "prod_69",
+      "title": "Boss Tube Screamer",
+      "price": 22800,
+      "category_id": "cat_pedals",
+      "tags": [
+        "boss",
+        "pedals",
+        "tube"
+      ]
+    },
+    {
+      "id": "prod_70",
+      "title": "Electro-Harmonix Big Muff",
+      "price": 50200,
+      "category_id": "cat_pedals",
+      "tags": [
+        "big",
+        "electro-harmonix",
+        "pedals"
+      ]
+    },
+    {
+      "id": "prod_71",
+      "title": "Electro-Harmonix Phase 90",
+      "price": 20900,
+      "category_id": "cat_pedals",
+      "tags": [
+        "electro-harmonix",
+        "pedals",
+        "phase"
+      ]
+    },
+    {
+      "id": "prod_72",
+      "title": "Boss DS-1",
+      "price": 50000,
+      "category_id": "cat_pedals",
+      "tags": [
+        "boss",
+        "ds-1",
+        "pedals"
+      ]
+    },
+    {
+      "id": "prod_73",
+      "title": "Ernie Ball Optiweb",
+      "price": 3100,
+      "category_id": "cat_strings",
+      "tags": [
+        "ernie-ball",
+        "optiweb",
+        "strings"
+      ]
+    },
+    {
+      "id": "prod_74",
+      "title": "D'Addario Optiweb",
+      "price": 8000,
+      "category_id": "cat_strings",
+      "tags": [
+        "d'addario",
+        "optiweb",
+        "strings"
+      ]
+    },
+    {
+      "id": "prod_75",
+      "title": "Dunlop XL Nickel",
+      "price": 6900,
+      "category_id": "cat_strings",
+      "tags": [
+        "dunlop",
+        "strings",
+        "xl"
+      ]
+    },
+    {
+      "id": "prod_76",
+      "title": "D'Addario Phosphor Bronze",
+      "price": 4500,
+      "category_id": "cat_strings",
+      "tags": [
+        "d'addario",
+        "phosphor",
+        "strings"
+      ]
+    },
+    {
+      "id": "prod_77",
+      "title": "Dunlop Phosphor Bronze",
+      "price": 4100,
+      "category_id": "cat_strings",
+      "tags": [
+        "dunlop",
+        "phosphor",
+        "strings"
+      ]
+    },
+    {
+      "id": "prod_78",
+      "title": "Ernie Ball Regular Slinky",
+      "price": 7900,
+      "category_id": "cat_strings",
+      "tags": [
+        "ernie-ball",
+        "regular",
+        "strings"
+      ]
+    },
+    {
+      "id": "prod_79",
+      "title": "Dunlop Optiweb",
+      "price": 6000,
+      "category_id": "cat_strings",
+      "tags": [
+        "dunlop",
+        "optiweb",
+        "strings"
+      ]
+    },
+    {
+      "id": "prod_80",
+      "title": "Rockcase Flight Case",
+      "price": 13600,
+      "category_id": "cat_cases",
+      "tags": [
+        "cases",
+        "flight",
+        "rockcase"
+      ]
+    },
+    {
+      "id": "prod_81",
+      "title": "Gator Gig Bag",
+      "price": 36400,
+      "category_id": "cat_cases",
+      "tags": [
+        "cases",
+        "gator",
+        "gig"
+      ]
+    },
+    {
+      "id": "prod_82",
+      "title": "SKB Gig Bag",
+      "price": 26300,
+      "category_id": "cat_cases",
+      "tags": [
+        "cases",
+        "gig",
+        "skb"
+      ]
+    },
+    {
+      "id": "prod_83",
+      "title": "Fender Gig Bag",
+      "price": 45100,
+      "category_id": "cat_cases",
+      "tags": [
+        "cases",
+        "fender",
+        "gig"
+      ]
+    },
+    {
+      "id": "prod_84",
+      "title": "Rockcase Gig Bag",
+      "price": 37600,
+      "category_id": "cat_cases",
+      "tags": [
+        "cases",
+        "gig",
+        "rockcase"
+      ]
+    },
+    {
+      "id": "prod_85",
+      "title": "Fender Hardshell Case",
+      "price": 40300,
+      "category_id": "cat_cases",
+      "tags": [
+        "cases",
+        "fender",
+        "hardshell"
+      ]
+    },
+    {
+      "id": "prod_86",
+      "title": "Fender Gig Bag",
+      "price": 39000,
+      "category_id": "cat_cases",
+      "tags": [
+        "cases",
+        "fender",
+        "gig"
+      ]
+    },
+    {
+      "id": "prod_87",
+      "title": "Gator Gig Bag",
+      "price": 52700,
+      "category_id": "cat_cases",
+      "tags": [
+        "cases",
+        "gator",
+        "gig"
+      ]
+    },
+    {
+      "id": "prod_88",
+      "title": "On-Stage Guitar Stand",
+      "price": 12700,
+      "category_id": "cat_stands",
+      "tags": [
+        "guitar",
+        "on-stage",
+        "stands"
+      ]
+    },
+    {
+      "id": "prod_89",
+      "title": "Hercules Amp Stand",
+      "price": 20900,
+      "category_id": "cat_stands",
+      "tags": [
+        "amp",
+        "hercules",
+        "stands"
+      ]
+    },
+    {
+      "id": "prod_90",
+      "title": "Quik Lok Mic Stand",
+      "price": 18100,
+      "category_id": "cat_stands",
+      "tags": [
+        "mic",
+        "quik-lok",
+        "stands"
+      ]
+    },
+    {
+      "id": "prod_91",
+      "title": "On-Stage Mic Stand",
+      "price": 17400,
+      "category_id": "cat_stands",
+      "tags": [
+        "mic",
+        "on-stage",
+        "stands"
+      ]
+    },
+    {
+      "id": "prod_92",
+      "title": "On-Stage Amp Stand",
+      "price": 13700,
+      "category_id": "cat_stands",
+      "tags": [
+        "amp",
+        "on-stage",
+        "stands"
+      ]
+    },
+    {
+      "id": "prod_93",
+      "title": "Quik Lok Keyboard Stand",
+      "price": 18900,
+      "category_id": "cat_stands",
+      "tags": [
+        "keyboard",
+        "quik-lok",
+        "stands"
+      ]
+    },
+    {
+      "id": "prod_94",
+      "title": "Quik Lok Mic Stand",
+      "price": 11200,
+      "category_id": "cat_stands",
+      "tags": [
+        "mic",
+        "quik-lok",
+        "stands"
+      ]
+    },
+    {
+      "id": "prod_95",
+      "title": "K&M Mic Stand",
+      "price": 6900,
+      "category_id": "cat_stands",
+      "tags": [
+        "k&m",
+        "mic",
+        "stands"
+      ]
+    },
+    {
+      "id": "prod_96",
+      "title": "On-Stage Keyboard Stand",
+      "price": 6900,
+      "category_id": "cat_stands",
+      "tags": [
+        "keyboard",
+        "on-stage",
+        "stands"
+      ]
+    },
+    {
+      "id": "prod_97",
+      "title": "Behringer Mixtrack Pro",
+      "price": 209600,
+      "category_id": "cat_dj",
+      "tags": [
+        "behringer",
+        "dj",
+        "mixtrack"
+      ]
+    },
+    {
+      "id": "prod_98",
+      "title": "Pioneer DJ Mixtrack Pro",
+      "price": 221800,
+      "category_id": "cat_dj",
+      "tags": [
+        "dj",
+        "mixtrack",
+        "pioneer-dj"
+      ]
+    },
+    {
+      "id": "prod_99",
+      "title": "Pioneer DJ Mixtrack Pro",
+      "price": 573400,
+      "category_id": "cat_dj",
+      "tags": [
+        "dj",
+        "mixtrack",
+        "pioneer-dj"
+      ]
+    },
+    {
+      "id": "prod_100",
+      "title": "Pioneer DJ Mixtrack Pro",
+      "price": 757000,
+      "category_id": "cat_dj",
+      "tags": [
+        "dj",
+        "mixtrack",
+        "pioneer-dj"
+      ]
+    },
+    {
+      "id": "prod_101",
+      "title": "Pioneer DJ DDJ-400",
+      "price": 589600,
+      "category_id": "cat_dj",
+      "tags": [
+        "ddj-400",
+        "dj",
+        "pioneer-dj"
+      ]
+    },
+    {
+      "id": "prod_102",
+      "title": "Denon DJ SC5000",
+      "price": 364200,
+      "category_id": "cat_dj",
+      "tags": [
+        "denon-dj",
+        "dj",
+        "sc5000"
+      ]
+    },
+    {
+      "id": "prod_103",
+      "title": "Denon DJ Mixtrack Pro",
+      "price": 428500,
+      "category_id": "cat_dj",
+      "tags": [
+        "denon-dj",
+        "dj",
+        "mixtrack"
+      ]
+    },
+    {
+      "id": "prod_104",
+      "title": "Yamaha 305P MkII",
+      "price": 159900,
+      "category_id": "cat_monitors",
+      "tags": [
+        "305p",
+        "monitors",
+        "yamaha"
+      ]
+    },
+    {
+      "id": "prod_105",
+      "title": "JBL Rokit 5",
+      "price": 42400,
+      "category_id": "cat_monitors",
+      "tags": [
+        "jbl",
+        "monitors",
+        "rokit"
+      ]
+    },
+    {
+      "id": "prod_106",
+      "title": "Presonus Rokit 5",
+      "price": 59200,
+      "category_id": "cat_monitors",
+      "tags": [
+        "monitors",
+        "presonus",
+        "rokit"
+      ]
+    },
+    {
+      "id": "prod_107",
+      "title": "Adam Audio HS5",
+      "price": 172600,
+      "category_id": "cat_monitors",
+      "tags": [
+        "adam-audio",
+        "hs5",
+        "monitors"
+      ]
+    },
+    {
+      "id": "prod_108",
+      "title": "JBL HS5",
+      "price": 284600,
+      "category_id": "cat_monitors",
+      "tags": [
+        "hs5",
+        "jbl",
+        "monitors"
+      ]
+    },
+    {
+      "id": "prod_109",
+      "title": "JBL Rokit 5",
+      "price": 270500,
+      "category_id": "cat_monitors",
+      "tags": [
+        "jbl",
+        "monitors",
+        "rokit"
+      ]
+    },
+    {
+      "id": "prod_110",
+      "title": "Yamaha 305P MkII",
+      "price": 114700,
+      "category_id": "cat_monitors",
+      "tags": [
+        "305p",
+        "monitors",
+        "yamaha"
+      ]
+    },
+    {
+      "id": "prod_111",
+      "title": "Yamaha Eris E5",
+      "price": 258600,
+      "category_id": "cat_monitors",
+      "tags": [
+        "eris",
+        "monitors",
+        "yamaha"
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": "usr_1",
+      "name": "Дана Абенов",
+      "tier": "regular"
+    },
+    {
+      "id": "usr_2",
+      "name": "Руслан Ахметов",
+      "tier": "regular"
+    },
+    {
+      "id": "usr_3",
+      "name": "Дана Абенов",
+      "tier": "regular"
+    },
+    {
+      "id": "usr_4",
+      "name": "Айгерим Жумабаев",
+      "tier": "regular"
+    },
+    {
+      "id": "usr_5",
+      "name": "Айгерим Сатыбалдин",
+      "tier": "vip"
+    },
+    {
+      "id": "usr_6",
+      "name": "Жанна Ибрагимов",
+      "tier": "regular"
+    },
+    {
+      "id": "usr_7",
+      "name": "Марат Токтаров",
+      "tier": "regular"
+    },
+    {
+      "id": "usr_8",
+      "name": "Асхат Сатыбалдин",
+      "tier": "regular"
+    },
+    {
+      "id": "usr_9",
+      "name": "Данияр Сериков",
+      "tier": "regular"
+    },
+    {
+      "id": "usr_10",
+      "name": "Асхат Ахметов",
+      "tier": "vip"
+    },
+    {
+      "id": "usr_11",
+      "name": "Нурлан Абенов",
+      "tier": "vip"
+    },
+    {
+      "id": "usr_12",
+      "name": "Санжар Сатыбалдин",
+      "tier": "regular"
+    },
+    {
+      "id": "usr_13",
+      "name": "Дана Ахметов",
+      "tier": "vip"
+    },
+    {
+      "id": "usr_14",
+      "name": "Нурлан Сатыбалдин",
+      "tier": "vip"
+    },
+    {
+      "id": "usr_15",
+      "name": "Гульнара Ибрагимов",
+      "tier": "regular"
+    },
+    {
+      "id": "usr_16",
+      "name": "Мадина Жумабаев",
+      "tier": "vip"
+    },
+    {
+      "id": "usr_17",
+      "name": "Гульнара Ахметов",
+      "tier": "regular"
+    },
+    {
+      "id": "usr_18",
+      "name": "Тимур Токтаров",
+      "tier": "regular"
+    },
+    {
+      "id": "usr_19",
+      "name": "Гульнара Сатыбалдин",
+      "tier": "regular"
+    },
+    {
+      "id": "usr_20",
+      "name": "Мадина Ибрагимов",
+      "tier": "regular"
+    },
+    {
+      "id": "usr_21",
+      "name": "Сабина Жумабаев",
+      "tier": "regular"
+    },
+    {
+      "id": "usr_22",
+      "name": "Диана Оспанов",
+      "tier": "vip"
+    },
+    {
+      "id": "usr_23",
+      "name": "Марат Оспанов",
+      "tier": "regular"
+    },
+    {
+      "id": "usr_24",
+      "name": "Сабина Абенов",
+      "tier": "vip"
+    },
+    {
+      "id": "usr_25",
+      "name": "Айгерим Оспанов",
+      "tier": "regular"
+    },
+    {
+      "id": "usr_26",
+      "name": "Айдана Токтаров",
+      "tier": "vip"
+    },
+    {
+      "id": "usr_27",
+      "name": "Санжар Касымов",
+      "tier": "regular"
+    },
+    {
+      "id": "usr_28",
+      "name": "Сабина Токтаров",
+      "tier": "vip"
+    },
+    {
+      "id": "usr_29",
+      "name": "Тимур Оспанов",
+      "tier": "regular"
+    },
+    {
+      "id": "usr_30",
+      "name": "Ержан Абенов",
+      "tier": "regular"
+    },
+    {
+      "id": "usr_31",
+      "name": "Руслан Оспанов",
+      "tier": "regular"
+    },
+    {
+      "id": "usr_32",
+      "name": "Дана Касымов",
+      "tier": "regular"
+    },
+    {
+      "id": "usr_33",
+      "name": "Айгерим Абенов",
+      "tier": "vip"
+    },
+    {
+      "id": "usr_34",
+      "name": "Асхат Ахметов",
+      "tier": "vip"
+    },
+    {
+      "id": "usr_35",
+      "name": "Мадина Касымов",
+      "tier": "regular"
+    }
+  ],
+  "orders": [
+    {
+      "id": "ord_1",
+      "user_id": "usr_21",
+      "items": [
+        [
+          "prod_78",
+          3
+        ],
+        [
+          "prod_66",
+          1
+        ],
+        [
+          "prod_15",
+          2
+        ],
+        [
+          "prod_50",
+          1
+        ]
+      ],
+      "total": 948700,
+      "ts": "2026-07-01",
+      "status": "refunded"
+    },
+    {
+      "id": "ord_2",
+      "user_id": "usr_35",
+      "items": [
+        [
+          "prod_47",
+          1
+        ],
+        [
+          "prod_56",
+          3
+        ]
+      ],
+      "total": 1300800,
+      "ts": "2026-06-20",
+      "status": "paid"
+    },
+    {
+      "id": "ord_3",
+      "user_id": "usr_8",
+      "items": [
+        [
+          "prod_65",
+          2
+        ],
+        [
+          "prod_40",
+          2
+        ],
+        [
+          "prod_86",
+          2
+        ]
+      ],
+      "total": 1739400,
+      "ts": "2026-05-18",
+      "status": "paid"
+    },
+    {
+      "id": "ord_4",
+      "user_id": "usr_13",
+      "items": [
+        [
+          "prod_86",
+          1
+        ],
+        [
+          "prod_49",
+          3
+        ],
+        [
+          "prod_87",
+          3
+        ],
+        [
+          "prod_96",
+          2
+        ]
+      ],
+      "total": 486600,
+      "ts": "2026-07-18",
+      "status": "paid"
+    },
+    {
+      "id": "ord_5",
+      "user_id": "usr_20",
+      "items": [
+        [
+          "prod_27",
+          3
+        ],
+        [
+          "prod_56",
+          3
+        ],
+        [
+          "prod_101",
+          3
+        ]
+      ],
+      "total": 2721900,
+      "ts": "2026-06-15",
+      "status": "refunded"
+    },
+    {
+      "id": "ord_6",
+      "user_id": "usr_29",
+      "items": [
+        [
+          "prod_66",
+          3
+        ],
+        [
+          "prod_61",
+          1
+        ]
+      ],
+      "total": 218400,
+      "ts": "2026-02-10",
+      "status": "refunded"
+    },
+    {
+      "id": "ord_7",
+      "user_id": "usr_22",
+      "items": [
+        [
+          "prod_105",
+          1
+        ]
+      ],
+      "total": 42400,
+      "ts": "2026-05-08",
+      "status": "paid"
+    },
+    {
+      "id": "ord_8",
+      "user_id": "usr_10",
+      "items": [
+        [
+          "prod_6",
+          1
+        ]
+      ],
+      "total": 649900,
+      "ts": "2026-08-20",
+      "status": "paid"
+    },
+    {
+      "id": "ord_9",
+      "user_id": "usr_30",
+      "items": [
+        [
+          "prod_81",
+          3
+        ],
+        [
+          "prod_74",
+          2
+        ],
+        [
+          "prod_25",
+          2
+        ],
+        [
+          "prod_92",
+          2
+        ]
+      ],
+      "total": 1055400,
+      "ts": "2026-04-05",
+      "status": "paid"
+    },
+    {
+      "id": "ord_10",
+      "user_id": "usr_7",
+      "items": [
+        [
+          "prod_29",
+          3
+        ],
+        [
+          "prod_23",
+          2
+        ],
+        [
+          "prod_103",
+          1
+        ],
+        [
+          "prod_90",
+          3
+        ]
+      ],
+      "total": 1874700,
+      "ts": "2026-04-28",
+      "status": "paid"
+    },
+    {
+      "id": "ord_11",
+      "user_id": "usr_30",
+      "items": [
+        [
+          "prod_103",
+          3
+        ],
+        [
+          "prod_60",
+          3
+        ]
+      ],
+      "total": 1330500,
+      "ts": "2026-09-20",
+      "status": "paid"
+    },
+    {
+      "id": "ord_12",
+      "user_id": "usr_29",
+      "items": [
+        [
+          "prod_107",
+          3
+        ],
+        [
+          "prod_71",
+          2
+        ],
+        [
+          "prod_58",
+          2
+        ],
+        [
+          "prod_21",
+          2
+        ]
+      ],
+      "total": 1670200,
+      "ts": "2026-04-27",
+      "status": "paid"
+    },
+    {
+      "id": "ord_13",
+      "user_id": "usr_34",
+      "items": [
+        [
+          "prod_81",
+          1
+        ],
+        [
+          "prod_31",
+          3
+        ],
+        [
+          "prod_36",
+          2
+        ],
+        [
+          "prod_57",
+          1
+        ]
+      ],
+      "total": 1749900,
+      "ts": "2026-05-11",
+      "status": "paid"
+    },
+    {
+      "id": "ord_14",
+      "user_id": "usr_35",
+      "items": [
+        [
+          "prod_18",
+          1
+        ]
+      ],
+      "total": 382700,
+      "ts": "2026-04-13",
+      "status": "paid"
+    },
+    {
+      "id": "ord_15",
+      "user_id": "usr_14",
+      "items": [
+        [
+          "prod_54",
+          2
+        ]
+      ],
+      "total": 226000,
+      "ts": "2026-06-18",
+      "status": "refunded"
+    },
+    {
+      "id": "ord_16",
+      "user_id": "usr_27",
+      "items": [
+        [
+          "prod_27",
+          2
+        ]
+      ],
+      "total": 291400,
+      "ts": "2026-07-25",
+      "status": "cancelled"
+    },
+    {
+      "id": "ord_17",
+      "user_id": "usr_2",
+      "items": [
+        [
+          "prod_62",
+          2
+        ],
+        [
+          "prod_1",
+          2
+        ],
+        [
+          "prod_46",
+          3
+        ],
+        [
+          "prod_39",
+          3
+        ]
+      ],
+      "total": 5083100,
+      "ts": "2026-09-26",
+      "status": "cancelled"
+    },
+    {
+      "id": "ord_18",
+      "user_id": "usr_15",
+      "items": [
+        [
+          "prod_29",
+          1
+        ],
+        [
+          "prod_35",
+          2
+        ],
+        [
+          "prod_56",
+          2
+        ],
+        [
+          "prod_63",
+          3
+        ]
+      ],
+      "total": 1335800,
+      "ts": "2026-07-24",
+      "status": "paid"
+    },
+    {
+      "id": "ord_19",
+      "user_id": "usr_30",
+      "items": [
+        [
+          "prod_80",
+          1
+        ],
+        [
+          "prod_69",
+          2
+        ]
+      ],
+      "total": 59200,
+      "ts": "2026-01-03",
+      "status": "paid"
+    },
+    {
+      "id": "ord_20",
+      "user_id": "usr_9",
+      "items": [
+        [
+          "prod_24",
+          2
+        ],
+        [
+          "prod_7",
+          1
+        ],
+        [
+          "prod_34",
+          2
+        ],
+        [
+          "prod_49",
+          2
+        ]
+      ],
+      "total": 2430100,
+      "ts": "2026-06-25",
+      "status": "paid"
+    },
+    {
+      "id": "ord_21",
+      "user_id": "usr_18",
+      "items": [
+        [
+          "prod_33",
+          1
+        ],
+        [
+          "prod_107",
+          3
+        ],
+        [
+          "prod_11",
+          3
+        ],
+        [
+          "prod_61",
+          1
+        ]
+      ],
+      "total": 2195400,
+      "ts": "2026-06-08",
+      "status": "paid"
+    },
+    {
+      "id": "ord_22",
+      "user_id": "usr_3",
+      "items": [
+        [
+          "prod_32",
+          1
+        ]
+      ],
+      "total": 94700,
+      "ts": "2026-01-20",
+      "status": "paid"
+    },
+    {
+      "id": "ord_23",
+      "user_id": "usr_16",
+      "items": [
+        [
+          "prod_61",
+          1
+        ],
+        [
+          "prod_86",
+          3
+        ]
+      ],
+      "total": 128700,
+      "ts": "2026-04-15",
+      "status": "paid"
+    },
+    {
+      "id": "ord_24",
+      "user_id": "usr_24",
+      "items": [
+        [
+          "prod_78",
+          3
+        ],
+        [
+          "prod_96",
+          1
+        ]
+      ],
+      "total": 30600,
+      "ts": "2026-03-10",
+      "status": "paid"
+    },
+    {
+      "id": "ord_25",
+      "user_id": "usr_2",
+      "items": [
+        [
+          "prod_74",
+          2
+        ],
+        [
+          "prod_87",
+          3
+        ],
+        [
+          "prod_49",
+          1
+        ]
+      ],
+      "total": 266000,
+      "ts": "2026-02-19",
+      "status": "paid"
+    },
+    {
+      "id": "ord_26",
+      "user_id": "usr_7",
+      "items": [
+        [
+          "prod_109",
+          1
+        ],
+        [
+          "prod_88",
+          3
+        ],
+        [
+          "prod_77",
+          1
+        ]
+      ],
+      "total": 312700,
+      "ts": "2026-06-18",
+      "status": "paid"
+    },
+    {
+      "id": "ord_27",
+      "user_id": "usr_24",
+      "items": [
+        [
+          "prod_65",
+          3
+        ]
+      ],
+      "total": 139200,
+      "ts": "2026-06-01",
+      "status": "paid"
+    },
+    {
+      "id": "ord_28",
+      "user_id": "usr_32",
+      "items": [
+        [
+          "prod_56",
+          2
+        ]
+      ],
+      "total": 344000,
+      "ts": "2026-08-23",
+      "status": "paid"
+    },
+    {
+      "id": "ord_29",
+      "user_id": "usr_28",
+      "items": [
+        [
+          "prod_94",
+          3
+        ],
+        [
+          "prod_67",
+          2
+        ]
+      ],
+      "total": 192000,
+      "ts": "2026-09-25",
+      "status": "refunded"
+    },
+    {
+      "id": "ord_30",
+      "user_id": "usr_30",
+      "items": [
+        [
+          "prod_106",
+          2
+        ],
+        [
+          "prod_94",
+          1
+        ],
+        [
+          "prod_76",
+          1
+        ],
+        [
+          "prod_35",
+          2
+        ]
+      ],
+      "total": 933700,
+      "ts": "2026-08-08",
+      "status": "refunded"
+    },
+    {
+      "id": "ord_31",
+      "user_id": "usr_25",
+      "items": [
+        [
+          "prod_4",
+          2
+        ],
+        [
+          "prod_64",
+          1
+        ],
+        [
+          "prod_109",
+          2
+        ]
+      ],
+      "total": 1678700,
+      "ts": "2026-04-12",
+      "status": "paid"
+    },
+    {
+      "id": "ord_32",
+      "user_id": "usr_22",
+      "items": [
+        [
+          "prod_77",
+          3
+        ],
+        [
+          "prod_90",
+          1
+        ],
+        [
+          "prod_36",
+          3
+        ]
+      ],
+      "total": 1556200,
+      "ts": "2026-04-03",
+      "status": "paid"
+    },
+    {
+      "id": "ord_33",
+      "user_id": "usr_27",
+      "items": [
+        [
+          "prod_72",
+          2
+        ],
+        [
+          "prod_98",
+          3
+        ],
+        [
+          "prod_31",
+          3
+        ],
+        [
+          "prod_89",
+          2
+        ]
+      ],
+      "total": 1483400,
+      "ts": "2026-08-26",
+      "status": "paid"
+    },
+    {
+      "id": "ord_34",
+      "user_id": "usr_6",
+      "items": [
+        [
+          "prod_29",
+          1
+        ],
+        [
+          "prod_52",
+          2
+        ],
+        [
+          "prod_89",
+          3
+        ]
+      ],
+      "total": 323600,
+      "ts": "2026-06-16",
+      "status": "refunded"
+    },
+    {
+      "id": "ord_35",
+      "user_id": "usr_34",
+      "items": [
+        [
+          "prod_55",
+          2
+        ],
+        [
+          "prod_96",
+          2
+        ],
+        [
+          "prod_71",
+          3
+        ]
+      ],
+      "total": 514700,
+      "ts": "2026-08-09",
+      "status": "paid"
+    },
+    {
+      "id": "ord_36",
+      "user_id": "usr_17",
+      "items": [
+        [
+          "prod_16",
+          1
+        ],
+        [
+          "prod_93",
+          2
+        ]
+      ],
+      "total": 159100,
+      "ts": "2026-02-24",
+      "status": "refunded"
+    },
+    {
+      "id": "ord_37",
+      "user_id": "usr_12",
+      "items": [
+        [
+          "prod_28",
+          2
+        ],
+        [
+          "prod_95",
+          2
+        ]
+      ],
+      "total": 416800,
+      "ts": "2026-09-20",
+      "status": "paid"
+    },
+    {
+      "id": "ord_38",
+      "user_id": "usr_7",
+      "items": [
+        [
+          "prod_38",
+          2
+        ],
+        [
+          "prod_30",
+          1
+        ]
+      ],
+      "total": 1487700,
+      "ts": "2026-05-01",
+      "status": "refunded"
+    },
+    {
+      "id": "ord_39",
+      "user_id": "usr_9",
+      "items": [
+        [
+          "prod_6",
+          2
+        ],
+        [
+          "prod_7",
+          3
+        ],
+        [
+          "prod_71",
+          1
+        ]
+      ],
+      "total": 2306200,
+      "ts": "2026-08-04",
+      "status": "paid"
+    },
+    {
+      "id": "ord_40",
+      "user_id": "usr_19",
+      "items": [
+        [
+          "prod_62",
+          1
+        ],
+        [
+          "prod_57",
+          2
+        ],
+        [
+          "prod_44",
+          2
+        ],
+        [
+          "prod_24",
+          1
+        ]
+      ],
+      "total": 1737700,
+      "ts": "2026-02-13",
+      "status": "refunded"
+    },
+    {
+      "id": "ord_41",
+      "user_id": "usr_5",
+      "items": [
+        [
+          "prod_20",
+          1
+        ]
+      ],
+      "total": 505300,
+      "ts": "2026-05-03",
+      "status": "paid"
+    },
+    {
+      "id": "ord_42",
+      "user_id": "usr_8",
+      "items": [
+        [
+          "prod_78",
+          1
+        ],
+        [
+          "prod_77",
+          3
+        ],
+        [
+          "prod_102",
+          2
+        ],
+        [
+          "prod_80",
+          2
+        ]
+      ],
+      "total": 775800,
+      "ts": "2026-08-10",
+      "status": "cancelled"
+    },
+    {
+      "id": "ord_43",
+      "user_id": "usr_28",
+      "items": [
+        [
+          "prod_73",
+          3
+        ],
+        [
+          "prod_80",
+          3
+        ],
+        [
+          "prod_8",
+          1
+        ]
+      ],
+      "total": 641100,
+      "ts": "2026-04-21",
+      "status": "paid"
+    },
+    {
+      "id": "ord_44",
+      "user_id": "usr_17",
+      "items": [
+        [
+          "prod_21",
+          1
+        ]
+      ],
+      "total": 548400,
+      "ts": "2026-03-18",
+      "status": "paid"
+    },
+    {
+      "id": "ord_45",
+      "user_id": "usr_11",
+      "items": [
+        [
+          "prod_53",
+          2
+        ]
+      ],
+      "total": 349200,
+      "ts": "2026-08-10",
+      "status": "paid"
+    },
+    {
+      "id": "ord_46",
+      "user_id": "usr_15",
+      "items": [
+        [
+          "prod_91",
+          2
+        ],
+        [
+          "prod_37",
+          1
+        ],
+        [
+          "prod_90",
+          3
+        ]
+      ],
+      "total": 904300,
+      "ts": "2026-04-09",
+      "status": "cancelled"
+    },
+    {
+      "id": "ord_47",
+      "user_id": "usr_13",
+      "items": [
+        [
+          "prod_15",
+          1
+        ],
+        [
+          "prod_70",
+          2
+        ],
+        [
+          "prod_29",
+          1
+        ],
+        [
+          "prod_83",
+          1
+        ]
+      ],
+      "total": 681700,
+      "ts": "2026-01-06",
+      "status": "paid"
+    },
+    {
+      "id": "ord_48",
+      "user_id": "usr_19",
+      "items": [
+        [
+          "prod_16",
+          3
+        ],
+        [
+          "prod_60",
+          2
+        ],
+        [
+          "prod_89",
+          2
+        ],
+        [
+          "prod_39",
+          3
+        ]
+      ],
+      "total": 2324500,
+      "ts": "2026-09-16",
+      "status": "refunded"
+    },
+    {
+      "id": "ord_49",
+      "user_id": "usr_6",
+      "items": [
+        [
+          "prod_56",
+          3
+        ]
+      ],
+      "total": 516000,
+      "ts": "2026-06-20",
+      "status": "paid"
+    },
+    {
+      "id": "ord_50",
+      "user_id": "usr_2",
+      "items": [
+        [
+          "prod_30",
+          3
+        ]
+      ],
+      "total": 267900,
+      "ts": "2026-01-25",
+      "status": "paid"
+    },
+    {
+      "id": "ord_51",
+      "user_id": "usr_3",
+      "items": [
+        [
+          "prod_61",
+          3
+        ],
+        [
+          "prod_67",
+          2
+        ]
+      ],
+      "total": 193500,
+      "ts": "2026-05-06",
+      "status": "cancelled"
+    },
+    {
+      "id": "ord_52",
+      "user_id": "usr_28",
+      "items": [
+        [
+          "prod_12",
+          2
+        ],
+        [
+          "prod_61",
+          2
+        ],
+        [
+          "prod_45",
+          3
+        ],
+        [
+          "prod_53",
+          1
+        ]
+      ],
+      "total": 1456000,
+      "ts": "2026-03-11",
+      "status": "paid"
+    },
+    {
+      "id": "ord_53",
+      "user_id": "usr_32",
+      "items": [
+        [
+          "prod_85",
+          3
+        ],
+        [
+          "prod_52",
+          1
+        ],
+        [
+          "prod_105",
+          2
+        ]
+      ],
+      "total": 248600,
+      "ts": "2026-02-11",
+      "status": "paid"
+    },
+    {
+      "id": "ord_54",
+      "user_id": "usr_21",
+      "items": [
+        [
+          "prod_99",
+          2
+        ]
+      ],
+      "total": 1146800,
+      "ts": "2026-09-27",
+      "status": "paid"
+    },
+    {
+      "id": "ord_55",
+      "user_id": "usr_35",
+      "items": [
+        [
+          "prod_53",
+          2
+        ],
+        [
+          "prod_7",
+          3
+        ],
+        [
+          "prod_25",
+          2
+        ],
+        [
+          "prod_67",
+          3
+        ]
+      ],
+      "total": 2475100,
+      "ts": "2026-08-25",
+      "status": "paid"
+    },
+    {
+      "id": "ord_56",
+      "user_id": "usr_14",
+      "items": [
+        [
+          "prod_71",
+          2
+        ],
+        [
+          "prod_17",
+          3
+        ],
+        [
+          "prod_37",
+          2
+        ]
+      ],
+      "total": 2901000,
+      "ts": "2026-02-01",
+      "status": "cancelled"
+    },
+    {
+      "id": "ord_57",
+      "user_id": "usr_16",
+      "items": [
+        [
+          "prod_40",
+          1
+        ],
+        [
+          "prod_71",
+          3
+        ]
+      ],
+      "total": 847000,
+      "ts": "2026-07-03",
+      "status": "paid"
+    },
+    {
+      "id": "ord_58",
+      "user_id": "usr_8",
+      "items": [
+        [
+          "prod_16",
+          2
+        ],
+        [
+          "prod_83",
+          3
+        ],
+        [
+          "prod_107",
+          2
+        ],
+        [
+          "prod_20",
+          3
+        ]
+      ],
+      "total": 2239000,
+      "ts": "2026-05-14",
+      "status": "refunded"
+    },
+    {
+      "id": "ord_59",
+      "user_id": "usr_31",
+      "items": [
+        [
+          "prod_59",
+          1
+        ],
+        [
+          "prod_71",
+          2
+        ]
+      ],
+      "total": 54100,
+      "ts": "2026-04-20",
+      "status": "refunded"
+    },
+    {
+      "id": "ord_60",
+      "user_id": "usr_9",
+      "items": [
+        [
+          "prod_36",
+          2
+        ]
+      ],
+      "total": 1017200,
+      "ts": "2026-06-26",
+      "status": "refunded"
+    }
+  ]
+}
