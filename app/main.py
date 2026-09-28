@@ -1,4 +1,4 @@
-import sys
+import sys  
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
@@ -6,7 +6,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 import streamlit as st
 
 from core.domain import Cart
-from core.transforms import (
+from core.recursion import by_price_range, by_tag, collect_products_recursive
+from core.transforms import (   #корзинага импорттау
     add_to_cart,
     average_order_value,
     cart_line_items,
@@ -19,7 +20,7 @@ from core.transforms import (
 
 SEED_PATH = str(Path(__file__).resolve().parent.parent / "data" / "seed.json")
 
-st.set_page_config(page_title="Музыкальный Интернет-Магазин", layout="wide")
+st.set_page_config(page_title="Музыкальный Интернет-Магазин", layout="wide") #иакырыбы 
 
 categories, products, users, orders = load_seed(SEED_PATH)
 
@@ -51,7 +52,7 @@ if menu == "Overview":
     st.subheader("Витрина товаров")
 
     cat_names = {c.id: c.name for c in categories}
-    cat_filter = st.selectbox("Фильтр по категории", ["Все"] + [c.name for c in categories])
+    cat_filter = st.selectbox("Фильтр по категории", ["Все"] + [c.name for c in categories]) 
     visible_products = (
         products
         if cat_filter == "Все"
@@ -135,6 +136,44 @@ elif menu == "Functional Core":
     col1.json(demo_cart.__dict__)
     col2.write("После:")
     col2.json({"id": demo_cart2.id, "user_id": demo_cart2.user_id, "items": list(demo_cart2.items)})
+
+elif menu == "Pipelines":
+    st.title("🔍 Pipelines — фильтрация каталога")
+    st.markdown(
+        "Фильтрация каталога через замыкания `by_price_range`/`by_tag` и рекурсивный обход "
+        "дерева категорий `collect_products_recursive` (из `core/recursion.py`)."
+    )
+
+    cat_names = {c.id: c.name for c in categories}
+    root_choice = st.selectbox(
+        "Категория (рекурсивно, с подкатегориями)", ["Все"] + [c.name for c in categories]
+    )
+
+    prices = [p.price for p in products]
+    price_lo, price_hi = min(prices), max(prices)
+    selected_lo, selected_hi = st.slider(
+        "Диапазон цены, ₸", min_value=price_lo, max_value=price_hi, value=(price_lo, price_hi)
+    )
+
+    all_tags = sorted({tag for p in products for tag in p.tags})
+    tag_choice = st.selectbox("Тег", ["Все"] + all_tags)
+
+    if root_choice == "Все":
+        base_products = products
+    else:
+        root_id = next(c.id for c in categories if c.name == root_choice)
+        base_products = collect_products_recursive(categories, products, root_id)
+
+    filtered = tuple(filter(by_price_range(selected_lo, selected_hi), base_products))
+    if tag_choice != "Все":
+        filtered = tuple(filter(by_tag(tag_choice), filtered))
+
+    st.write(f"Найдено товаров: **{len(filtered)}**")
+    for prod in filtered:
+        st.write(
+            f"**{prod.title}** — {cat_names.get(prod.category_id, prod.category_id)} — "
+            f"{prod.price:,} ₸ — {', '.join(prod.tags) or '—'}"
+        )
 
 else:
     st.title(f"Раздел: {menu}")

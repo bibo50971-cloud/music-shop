@@ -88,3 +88,22 @@ def test_cart_line_items_matches_products_and_quantities():
     line_by_id = {product.id: (qty, subtotal) for product, qty, subtotal in lines}
     assert line_by_id[p1.id] == (2, p1.price * 2)
     assert line_by_id[p2.id] == (1, p2.price * 1)
+
+
+def test_average_order_value_returns_zero_when_no_paid_orders():
+    orders = (
+        Order("o1", "u1", (), 1000, "2026-01-01", "cancelled"),
+        Order("o2", "u2", (), 500, "2026-01-02", "refunded"),
+    )
+    assert average_order_value(orders) == 0.0
+
+
+def test_cart_line_items_skips_unknown_product_id():
+    _, products, _, _ = load_seed(SEED_PATH)
+    p1 = products[0]
+    cart = Cart(id="c1", user_id="usr_1", items=((p1.id, 1), ("unknown_id", 5)))
+
+    lines = cart_line_items(cart, products)
+
+    assert len(lines) == 1
+    assert lines[0][0].id == p1.id
