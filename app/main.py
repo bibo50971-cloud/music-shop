@@ -6,6 +6,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 import streamlit as st
 
 from core.domain import Cart
+from core.memo import segment_customers, timed_call, top_products
 from core.recursion import by_price_range, by_tag, collect_products_recursive
 from core.transforms import (   #корзинага импорттау
     add_to_cart,
@@ -174,6 +175,39 @@ elif menu == "Pipelines":
             f"**{prod.title}** — {cat_names.get(prod.category_id, prod.category_id)} — "
             f"{prod.price:,} ₸ — {', '.join(prod.tags) or '—'}"
         )
+
+elif menu == "Reports":
+    st.title("📊 Reports — Top Products (cached)")
+    st.markdown(
+        "«Дорогая» функция `top_products` (`core/memo.py`) считает бестселлеры по всем "
+        "оплаченным заказам и кэшируется через `@lru_cache`. Первый вызов — полный расчёт, "
+        "повторный с теми же аргументами — мгновенно из кэша."
+    )
+
+    k = st.slider("Топ-N товаров", min_value=3, max_value=20, value=10)
+
+    top_products.cache_clear()
+    bestsellers, first_ms = timed_call(top_products, st.session_state.orders, products, k)
+    _, cached_ms = timed_call(top_products, st.session_state.orders, products, k)
+
+    col1, col2 = st.columns(2)
+    col1.metric("Без кэша (1-й вызов)", f"{first_ms:.3f} мс")
+    col2.metric("С кэшем (2-й вызов)", f"{cached_ms:.3f} мс")
+
+    st.caption(f"cache_info: {top_products.cache_info()}")
+
+    for idx, prod in enumerate(bestsellers, start=1):
+        st.write(f"{idx}. **{prod.title}** — {prod.price:,} ₸")
+
+    st.divider()
+    st.subheader("Сегментация покупателей")
+    st.markdown("Функция `segment_customers` (тоже с `@lru_cache`) делит пользователей по сумме оплаченных заказов.")
+
+    segment_customers.cache_clear()
+    segments = segment_customers(st.session_state.orders, users)
+    user_names = {u.id: u.name for u in users}
+    for user_id, segment in segments:
+        st.write(f"{user_names.get(user_id, user_id)} — **{segment}**")
 
 else:
     st.title(f"Раздел: {menu}")
