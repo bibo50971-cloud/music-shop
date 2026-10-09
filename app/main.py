@@ -5,7 +5,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 import streamlit as st
 
-from core.domain import Cart
+from core.domain import Cart, Discount
+from core.ftypes import safe_product, validate_order
 from core.memo import segment_customers, timed_call, top_products
 from core.recursion import by_price_range, by_tag, collect_products_recursive
 from core.transforms import (   #корзинага импорттау
@@ -137,6 +138,37 @@ elif menu == "Functional Core":
     col1.json(demo_cart.__dict__)
     col2.write("После:")
     col2.json({"id": demo_cart2.id, "user_id": demo_cart2.user_id, "items": list(demo_cart2.items)})
+
+    st.divider()
+    st.subheader("Maybe/Either — безопасные пайплайны (core/ftypes.py)")
+
+    st.markdown("**Maybe** — поиск товара без риска `None`/исключения:")
+    pid_choice = st.selectbox(
+        "ID товара для поиска", [p.id for p in products[:5]] + ["unknown_id"]
+    )
+    price_text = (
+        safe_product(products, pid_choice)
+        .map(lambda p: f"{p.title}: {p.price:,} ₸")
+        .get_or_else("Товар не найден")
+    )
+    st.write(f"`safe_product(...).map(...).get_or_else(...)` → **{price_text}**")
+
+    st.markdown("**Either** — проверка корзины на складские остатки и скидку:")
+    demo_stock = {p.id: 3 for p in products}  # искусственно малый остаток для демонстрации
+    demo_discounts = (Discount("d1", "SALE10", 10, {"min_total": 10000}),)
+
+    line_items = cart_line_items(st.session_state.cart, products)
+    if not line_items:
+        st.info("Добавьте товары в корзину на вкладке Overview, чтобы проверить Either-пайплайн.")
+    else:
+        draft_order = checkout(st.session_state.cart, products, order_id="draft", ts="2026-01-01")
+        result = validate_order(draft_order, demo_stock, demo_discounts)
+        if result.is_right():
+            final_total = result.map(lambda o: o.total).get_or_else(draft_order.total)
+            st.success(f"Either.Right: заказ валиден, итог с учётом скидки — {final_total:,} ₸")
+        else:
+            error = result.left_or_else({"error": "unknown"})
+            st.error(f"Either.Left: {error}")
 
 elif menu == "Pipelines":
     st.title("🔍 Pipelines — фильтрация каталога")

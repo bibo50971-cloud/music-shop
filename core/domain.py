@@ -1,7 +1,7 @@
 """Доменные модели. Все иммутабельны (@dataclass(frozen=True))."""
 
 from dataclasses import dataclass
-from typing import Optional, Tuple
+from typing import Dict, Optional, Tuple
 
 
 @dataclass(frozen=True)
@@ -42,3 +42,11 @@ class Order:
     total: int
     ts: str
     status: str
+
+
+@dataclass(frozen=True)
+class Discount:
+    id: str
+    code: str
+    percent: int
+    conditions: Dict
