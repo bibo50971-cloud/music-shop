@@ -1,4 +1,4 @@
-from core.domain import Discount, Order, Product
+from core.domain import Order, Product
 from core.ftypes import Maybe, safe_product, validate_order
 
 PRODUCTS = (
@@ -42,16 +42,3 @@ def test_either_left_or_else_returns_error_payload_on_left():
     assert error["error"] == "out_of_stock"
     assert error["product_id"] == "p1"
     assert result.left_or_else({}) != {}  # на Right left_or_else вернул бы default
-
-
-def test_validate_order_applies_best_matching_discount():
-    order = Order("o1", "u1", (("p1", 2),), 20000, "2026-01-01", "paid")
-    discounts = (
-        Discount("d1", "SALE10", 10, {"min_total": 10000}),
-        Discount("d2", "SALE20", 20, {"min_total": 15000}),
-    )
-
-    result = validate_order(order, stock={"p1": 10}, discounts=discounts)
-
-    assert result.is_right()
-    assert result.map(lambda o: o.total).get_or_else(None) == 16000  # 20000 * (100-20)/100

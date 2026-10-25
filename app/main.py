@@ -7,6 +7,7 @@ import streamlit as st
 
 from core.domain import Cart, Discount
 from core.ftypes import safe_product, validate_order
+from core.lazy import iter_orders_by_day, lazy_top_customers
 from core.memo import segment_customers, timed_call, top_products
 from core.recursion import by_price_range, by_tag, collect_products_recursive
 from core.transforms import (   #корзинага импорттау
@@ -207,6 +208,28 @@ elif menu == "Pipelines":
             f"**{prod.title}** — {cat_names.get(prod.category_id, prod.category_id)} — "
             f"{prod.price:,} ₸ — {', '.join(prod.tags) or '—'}"
         )
+
+    st.divider()
+    st.subheader("Ленивая потоковая обработка (core/lazy.py)")
+    st.markdown(
+        "`iter_orders_by_day` и `lazy_top_customers` — `yield`-генераторы: заказы "
+        "обрабатываются по одному, без построения промежуточного списка. Материализация "
+        "(в список для отображения) происходит только здесь, в UI, в самом конце."
+    )
+
+    available_days = sorted({o.ts for o in st.session_state.orders})
+    day_choice = st.selectbox("День", available_days)
+    day_orders = iter_orders_by_day(st.session_state.orders, day_choice)  # генератор, ещё не вычислен
+    st.write(f"Заказы за {day_choice}:")
+    for order in day_orders:  # вычисление по одному элементу за раз
+        st.write(f"- {order.id} · {order.user_id} · {order.total:,} ₸ · {order.status}")
+
+    k_customers = st.slider("Топ-K покупателей", min_value=1, max_value=10, value=5)
+    user_names = {u.id: u.name for u in users}
+    top_customers = lazy_top_customers(st.session_state.orders, k_customers)  # генератор
+    st.write("Топ покупателей по оплаченной сумме:")
+    for user_id, spend in top_customers:
+        st.write(f"- {user_names.get(user_id, user_id)} — {spend:,} ₸")
 
 elif menu == "Reports":
     st.title("📊 Reports — Top Products (cached)")
