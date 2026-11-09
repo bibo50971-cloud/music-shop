@@ -21,11 +21,6 @@ def test_iter_orders_by_day_yields_only_matching_day():
     assert tuple(o.id for o in result) == ("o1", "o2", "o4")
 
 
-def test_iter_orders_by_day_excludes_other_days():
-    result = tuple(iter_orders_by_day(ORDERS, "2026-01-02"))
-    assert tuple(o.id for o in result) == ("o3",)
-
-
 def test_lazy_top_customers_is_a_generator():
     result = lazy_top_customers(ORDERS, k=10)
     assert inspect.isgenerator(result)

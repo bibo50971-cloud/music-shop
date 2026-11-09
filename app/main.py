@@ -6,6 +6,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 import streamlit as st
 
 from core.domain import Cart, Discount
+from core.frp import create_shop_event_bus
 from core.ftypes import safe_product, validate_order
 from core.lazy import iter_orders_by_day, lazy_top_customers
 from core.memo import segment_customers, timed_call, top_products
@@ -31,6 +32,10 @@ if "cart" not in st.session_state:
     st.session_state.cart = Cart(id="cart_1", user_id="usr_1", items=())
 if "orders" not in st.session_state:
     st.session_state.orders = orders
+if "event_bus" not in st.session_state:
+    st.session_state.event_bus = create_shop_event_bus()
+if "event_log" not in st.session_state:
+    st.session_state.event_log = []
 
 st.sidebar.title("🎵 Music Shop")
 menu = st.sidebar.radio(
@@ -263,6 +268,52 @@ elif menu == "Reports":
     user_names = {u.id: u.name for u in users}
     for user_id, segment in segments:
         st.write(f"{user_names.get(user_id, user_id)} — **{segment}**")
+
+elif menu == "Async/FRP":
+    st.title("⚡ Async/FRP — шина событий (core/frp.py)")
+    st.markdown(
+        "`EventBus.publish(name, payload)` рассылает событие всем подписчикам "
+        "(`handle_add_to_cart`, `handle_remove`, `handle_checkout`, `handle_refund`). "
+        "Каждый подписчик — чистая функция: не мутирует состояние, а возвращает новое."
+    )
+
+    demo_user = users[0].id
+    demo_product = products[0].id
+
+    col1, col2, col3, col4 = st.columns(4)
+    if col1.button("ADD_TO_CART"):
+        st.session_state.event_bus.publish(
+            "ADD_TO_CART", {"user_id": demo_user, "product_id": demo_product, "qty": 1}
+        )
+        st.session_state.event_log.append(f"ADD_TO_CART · {demo_user} · {demo_product}")
+    if col2.button("REMOVE"):
+        st.session_state.event_bus.publish("REMOVE", {"user_id": demo_user, "product_id": demo_product})
+        st.session_state.event_log.append(f"REMOVE · {demo_user} · {demo_product}")
+    if col3.button("CHECKOUT"):
+        st.session_state.event_bus.publish("CHECKOUT", {"user_id": demo_user, "amount": 50000})
+        st.session_state.event_log.append(f"CHECKOUT · {demo_user} · 50,000 ₸")
+    if col4.button("REFUND"):
+        st.session_state.event_bus.publish("REFUND", {"amount": 20000})
+        st.session_state.event_log.append("REFUND · 20,000 ₸")
+
+    st.divider()
+    live_state = st.session_state.event_bus.state
+
+    col5, col6 = st.columns(2)
+    col5.metric("Текущие продажи", f"{live_state['total_sales']:,} ₸")
+    col6.metric("Возвраты", live_state["refunds"])
+
+    st.subheader("Живой список корзин")
+    active_carts = {uid: items for uid, items in live_state["carts"].items() if items}
+    if not active_carts:
+        st.info("Пока нет активности.")
+    else:
+        for uid, cart_items in active_carts.items():
+            st.write(f"**{uid}**: {cart_items}")
+
+    st.subheader("Журнал событий")
+    for line in reversed(st.session_state.event_log[-10:]):
+        st.caption(line)
 
 else:
     st.title(f"Раздел: {menu}")
