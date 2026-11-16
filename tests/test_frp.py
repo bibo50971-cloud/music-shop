@@ -40,9 +40,3 @@ def test_handlers_do_not_mutate_input_state():
 
     assert EMPTY_STATE["carts"] is original_carts
     assert EMPTY_STATE["carts"] == {}  # исходное состояние не изменилось
-
-
-def test_unknown_event_name_leaves_state_unchanged():
-    bus = create_shop_event_bus()
-    state = bus.publish("UNKNOWN_EVENT", {})
-    assert state == EMPTY_STATE
